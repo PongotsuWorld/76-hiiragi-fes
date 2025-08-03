@@ -1,0 +1,87 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh
+}
+
+.templateCueBox {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: row;
+  width: 512px;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.sendTemplateButton {
+  border: 0.5px solid #555;
+  background-color: #191919;
+  font-size: 16px;
+  padding: 18px 36px;
+  border-radius: 100vh;
+}
+
+.sendTemplateButton:active {
+  background-color: #1e1e1e;
+}
+
+.senderBox {
+  border: 0.5px solid #555;
+  background-color: #191919;
+  border-radius: 100vh;
+  width: 512px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.senderInput {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 12px 0px 12px 22px;
+  width: 454.5px;
+  max-width: 454.5px;
+}
+
+.sendButton {
+  border: none;
+  border-left: 0.5px solid #555555;
+  background-color: #2b2b2b;
+  border-radius: 0 100vh 100vh 0;
+  padding: 12px 16px;
+}
+
+.senderBox_late {
+  border: 0.5px solid #555;
+  background-color: #191919;
+  border-radius: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.senderInput_late {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 12px 0px 12px 0px;
+  width: 100px;
+  text-align: center;
+}
+
+.sendButton_late {
+  border: none;
+  border-left: 0.5px solid #555555;
+  background-color: #2b2b2b;
+  border-radius: 0 100vh 100vh 0;
+  padding: 12px 16px;
+}
+
+.cue {
+  margin-top: 16px;
+}
