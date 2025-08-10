@@ -1,14 +1,14 @@
 "use client"
 
 import { ref, push } from "firebase/database";
-import { db } from "../lib/database";
+import { rtdb } from "../lib/database";
 import { useState } from "react";
 import ContentReceiver from "./contentReceiver";
 import "../styles/sender.css"
 import Image from "next/image";
 import Send from "../public/send.svg"
 
-const dbRef = ref(db, "contents");
+const dbRef = ref(rtdb, "contents");
 
 
 const sendContent = (messageContent: string) => {
@@ -29,7 +29,7 @@ const SendTB = (props: {children: string}) => {
     >{props.children}</button>
   )
 }
-const SenderPage = () => {
+const CueSenderPage = () => {
   const [content, setContent] = useState("");
   const removeValue = () => {
     setContent("");
@@ -84,4 +84,4 @@ const SenderPage = () => {
   )
 };
 
-export default SenderPage;
+export default CueSenderPage;

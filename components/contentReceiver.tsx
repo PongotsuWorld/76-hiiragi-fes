@@ -1,9 +1,9 @@
 "use client"
 import { ref, onChildAdded } from "firebase/database";
-import { db } from "../lib/database";
+import { rtdb } from "../lib/database";
 import { useState, useEffect, memo } from "react";
 
-const dbRef = ref(db, "contents");
+const dbRef = ref(rtdb, "contents");
 
 // eslint-disable-next-line react/display-name
 const ContentReceiver = memo(() => {

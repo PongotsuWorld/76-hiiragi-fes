@@ -21,5 +21,5 @@ console.log(firebaseConfig)
 const app = initializeApp(firebaseConfig);
 
 export const auth = getAuth(app);
-export const db = getDatabase();
+export const rtdb = getDatabase(app);
 export const fsdb = getFirestore(app);

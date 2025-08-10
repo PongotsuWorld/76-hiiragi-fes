@@ -1,4 +1,4 @@
-import ReceiverPage from "../../components/peceiver-page";
+import ReceiverPage from "../../components/receiver-page";
 
 export const metadata = {
   title: 'Receiver'
