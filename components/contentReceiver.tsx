@@ -1,6 +1,6 @@
 "use client"
 import { ref, onChildAdded } from "firebase/database";
-import { db } from "./database";
+import { db } from "../lib/database";
 import { useState, useEffect, memo } from "react";
 
 const dbRef = ref(db, "contents");

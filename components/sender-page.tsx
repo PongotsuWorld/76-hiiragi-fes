@@ -1,12 +1,12 @@
 "use client"
 
 import { ref, push } from "firebase/database";
-import { db } from "../database";
+import { db } from "../lib/database";
 import { useState } from "react";
-import ContentReceiver from "../contentReceiver";
-import "./sender.css"
+import ContentReceiver from "./contentReceiver";
+import "../styles/sender.css"
 import Image from "next/image";
-import Send from "../../../public/send.svg"
+import Send from "../public/send.svg"
 
 const dbRef = ref(db, "contents");
 
@@ -29,7 +29,7 @@ const SendTB = (props: {children: string}) => {
     >{props.children}</button>
   )
 }
-const Sender = () => {
+const SenderPage = () => {
   const [content, setContent] = useState("");
   const removeValue = () => {
     setContent("");
@@ -84,4 +84,4 @@ const Sender = () => {
   )
 };
 
-export default Sender;
+export default SenderPage;

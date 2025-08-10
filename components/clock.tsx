@@ -1,5 +1,4 @@
 "use client"
-import { ref, onChildAdded } from "firebase/database";
 import { useState, useEffect, memo } from "react";
 
 // eslint-disable-next-line react/display-name

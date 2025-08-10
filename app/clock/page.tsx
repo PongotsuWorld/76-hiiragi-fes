@@ -1,6 +1,10 @@
-import Clock from "../clock"
-import "./clock.css";
+import Clock from "../../components/clock";
+import "../../styles/clock.css";
 import { Roboto } from "next/font/google";
+
+export const metadata = {
+  title: 'Clock'
+}
 
 const roboto = Roboto({
   weight: '400',

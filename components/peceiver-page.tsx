@@ -1,10 +1,9 @@
 "use client"
 
-import ContentReceiver from "../contentReceiver";
-import Clock from "../clock"
+import ContentReceiver from "./contentReceiver";
+import Clock from "./clock"
 import { useState } from "react";
-import "./receiver.css";
-import type { Metadata } from 'next';
+import "../styles/receiver.css";
 import { Roboto } from "next/font/google";
 
 const roboto = Roboto({
@@ -13,7 +12,7 @@ const roboto = Roboto({
   display: 'swap',
 })
 
-const receiver = () => {
+const ReceiverPage = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [btnState, changeState] = useState(false);
 
@@ -33,8 +32,4 @@ const receiver = () => {
   )
 };
 
-// export const metadata: Metadata = {
-//   title: 'Receiver'
-// }
-
-export default receiver;
+export default ReceiverPage;
