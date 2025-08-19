@@ -6,6 +6,8 @@
 
 .ObserverVideo {
   width: 50vw;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
 
 .SenderVideo {

@@ -6,7 +6,7 @@ type Props = {
   muted?: boolean;
 };
 
-export default function VideoPlayer({ stream, muted = false }: Props) {
+const VideoPlayer = ({ stream, muted = false }: Props) => {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
@@ -24,4 +24,7 @@ export default function VideoPlayer({ stream, muted = false }: Props) {
       className="ObserverVideo"
     />
   );
+
 }
+
+export default VideoPlayer;
