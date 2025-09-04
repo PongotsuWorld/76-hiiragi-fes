@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from 'next/link';
+import "../styles/home.css";
 
 export const metadata = {
   title: "HOME",
@@ -7,25 +8,12 @@ export const metadata = {
 
 const Home = () => {
   return (
-    <div className="app">
-      <h1>ホームだにょ</h1>
-      <div className="home-cards">
-        <div className="home-card">
-          <Link href="clock/">Clock</Link>
-        </div>
-        <div className="home-card">
-          <Link href="receiver/">CueReceiver</Link>
-        </div>
-        <div className="home-card">
-          <Link href="sender/">CueSender</Link>
-        </div>
-        <div className="home-card">
-          <Link href="observer/">Observer</Link>
-        </div>
-        <div className="home-card">
-          <Link href="videosender/">VideoSender</Link>
-        </div>
-      </div>
+    <div className="home-cards">
+      <Link className="home-card" href="clock/">Clock</Link>
+      <Link className="home-card" href="cuereceiver/">CueReceiver</Link>
+      <Link className="home-card" href="cuesender/">CueSender</Link>
+      <Link className="home-card" href="videoobserver/">Observer</Link>
+      <Link className="home-card" href="videosender/">VideoSender</Link>
     </div>
   )
 }

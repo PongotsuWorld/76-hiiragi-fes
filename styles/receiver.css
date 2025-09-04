@@ -18,12 +18,12 @@
 }
 
 .clock {
-  font-size: 110px;
+  font-size: 200px;
   font-variant-numeric: tabular-nums;
 }
 
 .clock.full {
-  font-size: 256px;
+  font-size: 360px;
 }
 
 #changeButton {

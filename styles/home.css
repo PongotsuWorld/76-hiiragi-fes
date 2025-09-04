@@ -1,0 +1,13 @@
+.home-card {
+  padding: 22px 52px;
+  border: 1px solid #222;
+  border-radius: 16px;
+  margin: 6px;
+}
+
+.home-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
