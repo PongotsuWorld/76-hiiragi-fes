@@ -39,8 +39,8 @@ const CueSenderPage = () => {
     <div className="app">
       <title>Sender</title>
       <div className="templateCueBox">
-        <SendTB>転換中</SendTB>
-        <SendTB>転換完了</SendTB>
+        <SendTB>✕✕✕✕✕✕✕✕</SendTB>
+        <SendTB>◎◎◎◎◎◎</SendTB>
         <div className="senderBox_late">
           <input
             className="senderInput_late"
